@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #4381A8;
+    --cor2: #000000;
+    --cor3: #7AC6F5;
+}
+
+body {
+    background-color: var(--cor1);
+    margin: auto;
+    max-width: 500px;
+    min-width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titulo {
+    margin: 20px 0 15px 0;
+}
+
+main {
+    background-color: var(--cor3);
+    margin-top: 50px;
+    border-radius: 12px;
+   
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#counter {
+    display: flex;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--cor1);
+}
+
+#current-number {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
