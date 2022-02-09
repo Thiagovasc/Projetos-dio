@@ -27,4 +27,6 @@ Polimorfismo - Objeto podem herdar caracteristicas e metódos assim como na Hera
 
 Fonte de referência/estudo para este módulo do bootcamp: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript
 
+Parametros que possuem getter e setter tem a convenção de iniciar com _, ex: _parametro
+
 
