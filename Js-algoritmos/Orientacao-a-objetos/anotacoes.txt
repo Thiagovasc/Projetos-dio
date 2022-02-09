@@ -1,0 +1,30 @@
+Paradigmas:
+    - Imperativo:
+        - Procedural;
+        - Orientado a objetos;
+        - Computação paralela (processamento paralelo);
+
+    - Declarativo:
+        - Lógico;
+        - Funcional;
+        - Base de dados;
+
+
+Programação orientada a objetos (POO ou OOP)
+Pilares:
+    - Herança;
+    - Polimorfismo;
+    - Abstração;
+    - Encapsulamento;
+
+Abstração - Considerado o ponto de partida para a criação de POO, abstração é o processo mental de isolar e extrair caracteristicas ou aspectos determinados, ou seja, ato de simplificar/generalizar coisas, criando assim objetos.
+
+Herança - Objeto filho herda propriedades e metódos do pai, assim como herdamos caracteristicas dos nossos pais.
+
+Encapsulamento - Cada classe possui propriedadese metódos independentes.
+
+Polimorfismo - Objeto podem herdar caracteristicas e metódos assim como na Herança, mas se comportam de forma diferente, ex: aves.
+
+Fonte de referência/estudo para este módulo do bootcamp: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript
+
+
