@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+
+:root {
+    --branco: #e5e8e8;
+    --cinzaBody: #4e545ccb;
+    --fullblack: #000401;
+
+}
+
+body {
+	background-color: var(--branco);
+	color: var(--cinzaBody);
+	margin: 0;
+	font-family: 'Quicksand';
+}
+
+body.dark-mode {
+	background-color: var(--fullblack);
+	color: var(--branco);
+}
+
+main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	width: 100%;
+	background-color: var(--cinzaBody);
+	padding: 12px;
+	color: var(--branco);
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+footer.dark-mode {
+	background-color: var(--cinzaBody);
+	color: var(--fullblack);
+}
+
+button {
+	border-radius: 25px;
+	font-size: 1.5rem;
+	height: 60px;
+	width: 200px;
+	border: none;
+	background-color: var(--cinzaBody);
+	color: var(--branco);
+	transition: all 0.5s linear;
+}
+
+
+button:hover {
+	background-color: var(--fullblack);
+}
+
+button.dark-mode {
+	background-color: var(--branco);
+	color: var(--cinzaBody);
+}
+
+button.dark-mode:hover {
+	background-color: var(--cinzaBody);
+	color: var(--branco);
+}
+
+footer a {
+    text-decoration: solid;
+    color: var(--branco);
+}
