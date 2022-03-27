@@ -22,8 +22,9 @@
             <div class="quadrado" id="8" onclick="escolhendoQuadrado(this.id)"></div>
             <div class="quadrado" id="9" onclick="escolhendoQuadrado(this.id)"></div>
         </div>
-        <h2 class="status"></h2>
-        <button class="restart">Restart Game</button>
+        <h2 class="status">Turno: <span id="jogador-atual">X</span></h2>
+        <h2 class="status">Vencedor: <span id="vencedor">?</span></h2>
+        <button class="restart" onclick="restart()">Restart Game</button>
     </main>
 </body>
 </html>
