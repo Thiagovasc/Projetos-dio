@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/Jogo-de-naves/imgs/fundo.jpg");
+}
+
+#inicio-game {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+#titulo {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    color: #e79e16;
+}
+
+
+#container-game {
+	width:950px;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#background-game {
+	width:950px;
+	height:630px;
+	background-image:url("/Jogo-de-naves/imgs/fundo_game.jpg");
+	border-color:#FFF;
+	border-style:solid;
+}
