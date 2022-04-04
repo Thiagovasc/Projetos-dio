@@ -30,6 +30,12 @@ function main(){
     const quadrado8 = document.getElementById(8)
     const quadrado9 = document.getElementById(9)
 
+    const vitoriasX = document.getElementById("x-victories")
+    const vitoriasY = document.getElementById("y-victories")
+
+    vitoriasX.innerHTML = 0
+    vitoriasY.innerHTML = 0
+
     // Linhas 
 
     if(checaSequencia(quadrado1, quadrado2, quadrado3)){
@@ -100,12 +106,17 @@ function vencedorDefinido(quadrado){
 
     const vencedorAtual = document.getElementById("vencedor")
     vencedorAtual.innerHTML = vencedor
+    placar(vencedor)
 }
 
 function celebrandoVitoria(quadrado1, quadrado2, quadrado3){
     quadrado1.style.background = "#0f0"
     quadrado2.style.background = "#0f0"
     quadrado3.style.background = "#0f0"
+}
+
+function placar(vencedor){
+    vencedor == "X" ? vitoriasX++ : vitoriasX++
 }
 
 function restart(){
