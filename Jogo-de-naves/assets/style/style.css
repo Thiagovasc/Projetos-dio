@@ -7,7 +7,15 @@
 }
 
 body {
-    background-image: url("/Jogo-de-naves/imgs/fundo.jpg");
+    background-image: url("/Jogo-de-naves/imagens/fundo.jpg");
+}
+
+#container-game {
+	width:950px;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #inicio-game {
@@ -22,6 +30,27 @@ body {
 
 }
 
+.start-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.start-button button {
+	width: 4rem;
+	padding: 0.2rem;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#background-game {
+	width:950px;
+	height:630px;
+	background-image:url("/Jogo-de-naves/imagens/fundo_game.jpg");
+	border-color:#FFF;
+	border-style:solid;
+}
+
 #titulo {
     font-family: 'Caveat', cursive;
     font-size: 50px;
@@ -29,19 +58,234 @@ body {
 }
 
 
-#container-game {
-	width:950px;
-	height:auto;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
+#jogador {
+	width:256px;
+	height:66px;
+	position:absolute;
+	left:8px;
+	top:179px;
+	background-image:url("/Jogo-de-naves/imagens/apache.png");
+
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+
+h2 {
+	font-family:"Caveat", sans-serif;
+	font-size:20px;
+	color:#e79e16;
+}
+
+h3 {
+	font-family:"Caveat", sans-serif;
+	font-size:20px;
+	color:#603A03;
+
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+#reinicia {
+	cursor: pointer;
+	margin-top: 1rem;
+	font-size: 30px;
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url("/Jogo-de-naves/imagens/disparo.png");
+}
+
+#amigo {
+	width: 44px;
+	height: 51px;
+	position: absolute;
+	left: 10px;
+	top: 464px;
+	background-image:url("/Jogo-de-naves/imagens/amigo.png");
+}
+
+#inimigo1 {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 689px;
+	top: 253px;
+	background-image:url("/Jogo-de-naves/imagens/inimigo1.png");
+	
 }
 
 
-#background-game {
-	width:950px;
-	height:630px;
-	background-image:url("/Jogo-de-naves/imgs/fundo_game.jpg");
-	border-color:#FFF;
-	border-style:solid;
+#inimigo2 {
+	width: 165px;
+	height: 70px;
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	background-image: url("/Jogo-de-naves/imagens/inimigo2.png");
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.animacao-jogador {
+	background-image:url("/Jogo-de-naves/imagens/apache.png");
+	animation:play .5s steps(2) infinite;
+
+       -webkit-animation: play .5s steps(2) infinite;
+       -moz-animation: play .5s steps(2) infinite;
+       -ms-animation: play .5s steps(2) infinite;
+       -o-animation: play .5s steps(2) infinite;
+}
+
+
+.animacao-inimigo {
+    background-image:url("/Jogo-de-naves/imagens/inimigo1.png");
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite; 
+}
+
+/*Animação 1 e 2 possuem os mesmos principios */
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
+
+
+@-webkit-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+ 
+ @-moz-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+ 
+ @-ms-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+ 
+ @-o-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+
+ .animacao-amigo {
+	background-image:url("/Jogo-de-naves/imagens/amigo.png");
+	animation:play2 .9s steps(12) infinite;
+	-webkit-animation: play2 .9s steps(12) infinite;
+       -moz-animation: play2 .9s steps(12) infinite;
+        -ms-animation: play2 .9s steps(12) infinite;
+         -o-animation: play2 .9s steps(12) infinite;
+}
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-528px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-o-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+.animacao-amigo-explosao {
+	width:44px;
+	height:51px;
+	background-image:url("/Jogo-de-naves/imagens/amigo_morte.png");
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
 }

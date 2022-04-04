@@ -15,13 +15,22 @@
                     <h1 id="titulo">Resgate</h1>
                     <p>
                         Utiliza tecla <strong>W</strong> para mover o helicoptero para cima, a tecla <strong>S</strong> para mover o helicoptero para baixo, a tecla <strong>D</strong> executa os disparos.
-                        <button>Start</button>
-                        <img src="" alt="" srcset="">
+                        <div class="start-button">
+                            <button onclick="start()">Start</button>
+                        </div>
                     </p>
                 </div>
             </div>
         </div>
-    </main>
-    
+    </main>    
+    <audio src="sons/som.mp3" preload="auto" id="somDisparo"></audio>
+    <audio src="sons/explosao.mp3" preload="auto" id="somExplosao"></audio>
+    <audio src="sons/musica_fundo.mp3" preload="auto" id="musica"></audio>
+    <audio src="sons/gameover.mp3" preload="auto" id="somGameover"></audio>
+    <audio src="sons/perdido.mp3" preload="auto" id="somPerdido"></audio>	
+    <audio src="sons/resgate.mp3" preload="auto" id="somResgate"></audio>
+    <script src="assets/script/jquery-1.11.1.min.js"></script>
+    <script src="assets/script/jquery-collision.min.js"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
