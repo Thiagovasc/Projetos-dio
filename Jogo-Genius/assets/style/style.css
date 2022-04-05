@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.inicio-game {
+    display: grid;
+    grid-template-areas: "yellow blue" 
+    "green red";
+    grid-gap: 10px;
+    border: 1px solid #fff;
+    background-color: black;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+}
