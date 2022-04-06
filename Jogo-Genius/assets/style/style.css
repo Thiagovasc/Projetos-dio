@@ -18,12 +18,40 @@ body {
 
 .inicio-game {
     display: grid;
-    grid-template-areas: "yellow blue" 
-    "green red";
+    grid-template-areas: "amarelo azul" 
+    "verde vermelho";
     grid-gap: 10px;
     border: 1px solid #fff;
     background-color: black;
     border-radius: 100%;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
+}
+
+#yellow {
+    grid-area: amarelo;
+    background-color: #e7e716e5;
+    border-top-left-radius: 100%;
+}
+
+#blue {
+    grid-area: azul;
+    background-color: #2727e4;
+    border-top-right-radius: 100%;
+}
+
+#green {
+    grid-area: verde;
+    background-color: #1dbe1d;
+    border-bottom-left-radius: 100%;
+}
+
+#red {
+    grid-area: vermelho;
+    background-color: #d31a1adc;
+    border-bottom-right-radius: 100%;
+}
+
+#selected {
+    opacity: .4;
 }
