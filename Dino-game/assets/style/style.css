@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body h2 {
+    text-align: center;
+}
+#container-game {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
+    width: 600px;
+    height: 250px;
+    margin: auto;
+    margin-top: 4rem;
+    padding: .4rem;
+    background-image: url("/Dino-game/imagens/background-dino-game.png");
+}
+
+#sonic {
+    width: 40px;
+    height: 60px;
+    background-image: url("/Dino-game/imagens/sonic.png");
+    position: relative;
+    top: 122px;
+    
+}
+
+#obstacle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    background-image: url("/Dino-game/imagens/cactus-2.png");
+    background-size: 40px 40px;
+    top: 82px;
+    left: 558px;
+    animation: slider 1s infinite linear;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+
+}
+
+@keyframes jump {
+    0% {
+      top: 122px;
+    }
+  
+    30% {
+      top: 92px;
+    }
+  
+    50% {
+      top: 62px;
+    }
+  
+    80% {
+      top: 92px;
+    }
+  
+    100% {
+      top: 122px;
+    }
+
+  }
+
+@keyframes slider {
+    0% {
+        left: 558px;
+    }
+
+    100% {
+        left: -60px;
+    }
+
+}
