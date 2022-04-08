@@ -1,7 +1,8 @@
 const sonic = document.getElementById("sonic")
 const cacto = document.getElementById("obstacle")
 const pontuacao = document.getElementById("score-points")
-var score = 0;  pontuacao.innerHTML = score
+let isAlive = true
+
 
 function jump(){
     if(sonic.classList != "jump"){
@@ -13,33 +14,37 @@ function jump(){
     }
 }
 
-document.addEventListener("keydown", function(event){
-    jump()
-
-})
+document.addEventListener("keydown", jump)
 
 
 let detectandoColisao = setInterval( function(){
+    let score = 0
+    pontuacao.innerHTML = score
 
     var sonicEixoX = parseInt(window.getComputedStyle(sonic).getPropertyValue("top"))
     var cactoEixoY = parseInt(window.getComputedStyle(cacto).getPropertyValue("left"))
 
     if(cactoEixoY < 50 && cactoEixoY > 0){
         if(sonicEixoX > 82){
-            cacto.classList.remove("slider")
-            console.log("Game Over!")
+            gameOver()
+            isAlive = false
         }
         else {
-            score += 10
-            pontuacao.innerHTML = score
+            scoreRecord()
             console.log("Desviou")
+            console.log(score)
         }
     }
 
 })
 
 function scoreRecord(){
+    score += 10
 
 }
 
-function GameOver(){}
+function gameOver(){
+    alert("Game Over")
+    isAlive = true
+    score = 0
+}
