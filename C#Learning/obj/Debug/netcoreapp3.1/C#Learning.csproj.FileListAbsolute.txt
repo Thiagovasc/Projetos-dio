@@ -1,0 +1,13 @@
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\bin\Debug\netcoreapp3.1\C#Learning.exe
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\bin\Debug\netcoreapp3.1\C#Learning.deps.json
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\bin\Debug\netcoreapp3.1\C#Learning.runtimeconfig.json
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\bin\Debug\netcoreapp3.1\C#Learning.runtimeconfig.dev.json
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\bin\Debug\netcoreapp3.1\C#Learning.dll
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\bin\Debug\netcoreapp3.1\C#Learning.pdb
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\obj\Debug\netcoreapp3.1\C#Learning.csprojAssemblyReference.cache
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\obj\Debug\netcoreapp3.1\C#Learning.AssemblyInfoInputs.cache
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\obj\Debug\netcoreapp3.1\C#Learning.AssemblyInfo.cs
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\obj\Debug\netcoreapp3.1\C#Learning.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\obj\Debug\netcoreapp3.1\C#Learning.dll
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\obj\Debug\netcoreapp3.1\C#Learning.pdb
+C:\Users\pedro\Projetos\Projetos-dio\C#Learning\obj\Debug\netcoreapp3.1\C#Learning.genruntimeconfig.cache
